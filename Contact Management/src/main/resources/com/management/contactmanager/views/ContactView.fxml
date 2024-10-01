@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.management.contactmanager.controllers.ContactController">
+    <children>
+        <Label text="Contact Management System" style="-fx-font-size: 20px;" />
+        <HBox spacing="10">
+            <TextField fx:id="nameField" promptText="Name" />
+            <TextField fx:id="phoneField" promptText="Phone Number" />
+            <TextField fx:id="emailField" promptText="Email" />
+            <Button text="Add Contact" onAction="#addContact" />
+        </HBox>
+        <ListView fx:id="contactListView" />
+        <Button text="Remove Selected Contact" onAction="#removeContact" />
+    </children>
+</VBox>
